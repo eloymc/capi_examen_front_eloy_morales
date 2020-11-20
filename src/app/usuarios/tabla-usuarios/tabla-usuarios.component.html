@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Fecha de Nacimiento</th>
+        <th>Edad</th>
+        <th>Dirección</th>
+    </tr>
+    <tr *ngFor="let registro of usuarios">
+        <td>{{registro.name}}</td>
+        <td>{{registro.fecha_nacimiento}}</td>
+        <td>{{registro.edad}}</td>
+        <td>{{registro.domicilio}} {{registro.numero_exterior}} {{registro.colonia}} {{registro.cp}} {{registro.ciudad}}</td>
+    </tr>
+</table>
